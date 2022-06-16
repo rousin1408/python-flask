@@ -11,6 +11,6 @@ def spelling():
         typo = data["sentence"]
         tool = language_tool_python.LanguageToolPublicAPI('en-US')
         final = tool.correct(typo)
-        return final
+        return print(final)
        
     return {"error": "Request must be JSON"}, 415 
